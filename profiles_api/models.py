@@ -18,7 +18,7 @@ class UserProfileManager(BaseUserManager):
 
 		return user
 
-	def creat_superuser(self, email, name, password):
+	def create_superuser(self, email, name, password):
 		"""Create and save an ew superuser with given details"""
 		user = self.create_user(email, name, password)
 
@@ -48,6 +48,6 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 		"""Retrieve shot name of user"""
 		return self.name
 
-    def __str__(self):
+	def __str__(self):
 		"""Return string representdation of our user"""
 		return self.email
