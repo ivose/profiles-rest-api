@@ -28,8 +28,9 @@ DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 #DEBUG = True
 
 ALLOWED_HOSTS = [
-    # 'myamazonserver12345.compute.amzon.com',
-    # '127.0.0.1'
+    'ec2-18-221-99-213.us-east-2.compute.amazonaws.com',
+    '127.0.0.1',
+    'localhost'
 ]
 
 
